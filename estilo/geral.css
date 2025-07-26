@@ -1,0 +1,106 @@
+/* ---------------------- */
+/* 🎨 Estilos Gerais do Site */
+/* ---------------------- */
+
+body {
+    background-image: url(../imagens/backgroung.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ----------------------------- */
+/* 📋 Menus Iniciais do Jogo     */
+/* ----------------------------- */
+
+
+.menu__1 { 
+    background-color: #2f2c2e ;
+    border: 2px solid #e8e8e8;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.menu__2 { 
+    background-color: #5f065f;
+    border: 2px solid  #f55af5;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+/* ----------------------------- */
+/* 🔁 Botão Reiniciar / Menu     */
+/* ----------------------------- */
+
+
+.restart {
+    background-color: #2f2c2e;
+    border: 2px solid #e8e8e8;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* ----------------------------------- */
+/* 🟪 Variações de Botões de Menu      */
+/* ----------------------------------- */
+
+.menu1.button {
+    background-color: #5f065f;
+    border: 2px solid #f55af5;
+}
+
+.menu2.button {
+    background-color: #2f2c2e;
+    border: 2px solid #e8e8e8;
+}
+
+/* ----------------------------- */
+/* 🔘 Botões Gerais              */
+/* ----------------------------- */
+
+
+button {
+    border-radius: 10px;
+    border: 1px solid #f55af5;
+    background-color: #5f065f;
+    color: white;
+    font-size: 1em;
+}
+
+
+button:hover {
+    box-shadow: 2px 2px 3px white, inset 2px 2px 3px white;
+    text-shadow: 2px 2px 4px white;
+    cursor: pointer;
+}
+
+/* ----------------------------- */
+/* 🎮 Menu Durante o Jogo        */
+/* ----------------------------- */
+
+
+.game__menu__mainmenu, .game__menu__points, .game__menu__moves,
+.game__menu__points__player1, .game__menu__points__player2  {
+    background-color: #2f2c2e;
+    border: 2px solid #e8e8e8;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* ----------------------------- */
+/* 👤 Estilos Específicos por Jogador */
+/* ----------------------------- */
+
+.game__menu__points__player2 {
+    color: gray;
+}

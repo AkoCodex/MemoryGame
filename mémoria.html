@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Estilos principais do jogo -->
+    <link rel="stylesheet" href="estilo/geral.css">
+    <link rel="stylesheet" href="estilo/layout.css">
+
+    <title>Jogo da memoria</title>
+
+    <!-- Script principal do jogo -->
+ <script src="cods.js"></script>
+</head>
+<body>
+    <main class="game">
+
+       <!-- Tela inicial: Menu de modos de jogo -->
+      <section class="menu container-menu">
+
+         <!-- Modos para 1 jogador -->
+        <section class="menu__1 menu-panel single-player">
+          <h1 class="menu1__title">Escolha seu modo de jogo!</h1>
+        <ul class="menu1__list">
+          <li class="menu__item"><button class="menu1 button" id="menuButton1">12 Cartas</button></li>
+          <li class="menu__item"><button class="menu1 button" id="menuButton2">18 Cartas</button></li>
+          <li class="menu__item"><button class="menu1 button" id="menuButton3">24 Cartas</button></li>
+          <li class="menu__item"><button class="menu1 button" id="menuButton4">Triplos</button></li>
+        </ul>
+        </section>
+
+        <!-- Modos para 2 jogadores -->
+        <section class="menu__2 menu-panel single-player">
+          <h1 class="menu2__title">Escolha seu modo de jogo!</h1>
+        <ul class="menu2__list">
+          <li class="menu__item"><button class="menu2 button" id="menuButton5">2 Jogadores</button></li>
+          <li class="menu__item"><button class="menu2 button" id="menuButton6">Triplo 2 jogadores</button></li>
+        </ul>
+        </section>
+      </section>
+
+      <!-- Tela de reinício do jogo -->
+      <section class="restart">
+        <h2 class="restart__title">Deseja jogar novamente?</h2>
+        <button class="restart__button--no">Não</button>
+        <button class="restart__button--yes">Sim</button>
+      </section>
+
+       <!-- Menu superior do jogo com pontuação e jogadas -->
+    <section class="game__menu">
+
+      <!-- Menu superior do jogo com pontuação e jogadas -->
+      <div class="game__menu__mainmenu">
+          <button class="game__menu__mainmenu__button">Voltar ao menu</button>
+      </div>
+
+      <!-- Pontuação do jogador (modo solo) -->
+      <div class="game__menu__points">
+          <h3 class="game__menu__points__title">Pontos</h3>
+          <span id="game__menu__points__result">0</span>
+      </div>
+
+      <!-- Número de jogadas restantes -->
+      <div class="game__menu__moves">
+          <h3 class="game__menu__moves__title">Jogadas restantes</h3>
+          <span class="game__menu__moves__result">15</span>
+      </div>
+
+      <!-- Pontuação do Jogador 1 (modo 2 jogadores) -->
+      <div class="game__menu__points__player1">
+          <h3 class="game__menu__points__player1__title">Jogador 1</h3>
+          <span class="game__menu__points__player1__result">0</span>
+      </div>
+
+      <!-- Pontuação do Jogador 2 (modo 2 jogadores) -->
+      <div class="game__menu__points__player2">
+          <h3 class="game__menu__points__player2__title">Jogador 2</h3>
+          <span class="game__menu__points__player2__result">0</span>
+      </div>
+    </section>
+
+    <!-- Área onde as cartas serão exibidas -->
+      <section class="display">
+        <div class="display__grid"></div>
+      </section> 
+    </main>
+</body>
+</html>
